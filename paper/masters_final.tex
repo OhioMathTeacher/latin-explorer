@@ -1,36 +1,61 @@
 \documentclass[12pt]{article}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}           % Palatino for body text
+\usepackage[scaled=0.95]{helvet} % Helvetica for any sans-serif needs
+\usepackage[margin=1.25in]{geometry}
 \usepackage{setspace}
-\usepackage{fontenc}
-\usepackage{inputenc}
+\usepackage{microtype}          % better justification and kerning
 \usepackage{csquotes}
 \usepackage[style=apa, backend=biber]{biblatex}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black,
+            urlcolor=[rgb]{0,0.35,0.55}]{hyperref}
 \usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{titling}
 
 \addbibresource{references.bib}
 
 \doublespacing
 
-\title{\textit{Latin Explorer}: Technology, Artificial Intelligence,\\and the Living Latin Classroom}
-\author{}
-\date{}
+% ---- Section heading style: small-caps with a subtle rule ----
+\titleformat{\section}
+  {\large\scshape\bfseries}{}{0em}{}[\vspace{-0.5ex}\rule{\textwidth}{0.4pt}]
+\titleformat{\subsection}
+  {\normalsize\itshape\bfseries}{}{0em}{}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1.5ex}{0.5ex}
+
+% ---- Title block styling ----
+\pretitle{\begin{center}\LARGE\itshape}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{}\author{}\postauthor{}
+\predate{}\date{}\postdate{}
+
+\title{\textit{Latin Explorer}: Technology, Artificial Intelligence,\\
+       and the Living Latin Classroom}
 
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
 
-\begin{quote}
-\textit{There is no royal road to Geometry.} --- Euclid
-\end{quote}
+\begin{center}
+\small
+\textit{``There is no royal road to Geometry.''} \quad --- Euclid
+\end{center}
 
-\bigskip
+\vspace{1em}
 
-\noindent Live site: \url{https://lamkalm.github.io/latin-explorer/}\\
-GitHub repo: \url{https://github.com/lamkalm/latin-explorer}
+\begin{center}
+\small
+\href{https://lamkalm.github.io/latin-explorer/}{lamkalm.github.io/latin-explorer}
+\quad\textbullet\quad
+\href{https://github.com/lamkalm/latin-explorer}{github.com/lamkalm/latin-explorer}
+\end{center}
 
-\bigskip
+\vspace{1.5em}
 
 %% ============================================================
 \section*{Introduction}
