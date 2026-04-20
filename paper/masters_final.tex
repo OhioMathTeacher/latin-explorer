@@ -1,0 +1,259 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\addbibresource{references.bib}
+
+\doublespacing
+
+\title{\textit{Latin Explorer}: Technology, Artificial Intelligence,\\and the Living Latin Classroom}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{quote}
+\textit{There is no royal road to Geometry.} --- Euclid
+\end{quote}
+
+\bigskip
+
+\noindent Live site: \url{https://lamkalm.github.io/latin-explorer/}\\
+GitHub repo: \url{https://github.com/lamkalm/latin-explorer}
+
+\bigskip
+
+%% ============================================================
+\section*{Introduction}
+%% ============================================================
+
+On paper, the goal was to create a website to host interactive tools for
+learning Latin as a living language. This website, presentation, and essay
+represent the culmination of two years spent in a professional training
+program. Going back to college in order to become a high school teacher did
+not always make sense. One might as well learn how to swim by fishing---or
+learn a language through a textbook. Enter Latin.
+
+One of the perks of majoring in Latin Education as opposed to English or
+Math is seeing how people react to learning that people go to school for
+this. Their responses range from polite interest and delighted surprise to
+mild amusement, thinly veiled condescension, or outright laughter. These
+reactions are understandable to a point: Latin is quite possibly the driest,
+most academic subject imaginable. The fact that many Latin programs---along
+with many other non-technical, non-ELA and Math subjects---are dying seems
+to support some of these reactions. On the other hand, studying the classics
+often goes hand in hand with elitist attitudes (such attitudes extended to
+eugenics in the early 20th century in places like Princeton)
+\autocite[see, e.g.,][]{Stray1998}.
+
+Language acquisition theories emphasize the importance of interaction,
+context, and meaningful communication \autocite{Krashen1982}. As
+\textcite{Yuldasheva2026} notes, ``while Latin is not commonly spoken,
+modern approaches attempt to simulate communicative environments through
+digital tools and interactive platforms.'' As a Latin student, I found
+myself thinking multiple times: \textit{AI was built for this!} If I were
+to settle on conversing with and learning from AI, how could I ever fairly
+blame my students for getting up from their desks and going back home to do
+the same?
+
+Teaching Latin is unlike teaching Spanish, French, or any other modern
+language. Outside of the Vatican and very few classrooms, Latin is
+practically dead \autocite{Beard2013}. The focus shifts from writing and
+speaking to decoding ancient texts. The sort of topical vocabulary taught in
+other foreign language classrooms---weather, colors, emotions---are not as
+useful as studying core vocabulary like prepositions, adverbs, and a litany
+of verbs and nouns related to ancient Rome (e.g.\ \textit{servus, bellum,
+ferrum}). How can teachers and students reasonably expect to study two sets
+of material for one subject at the same time? Bridging these two approaches
+was the primary aim of this project.
+
+While most will concede that Latin was the language of Western scholarship
+and the learned professions of medicine and law \autocite{Waquet2001}, a
+piece from \textit{The Atlantic} makes a similar point: ``At Harvard
+University, for example, the wide extension of the elective system led to
+the abandonment many years ago of the requirement of Latin in college for
+the degree of Bachelor of Arts.'' The article was written in 1917.
+
+If the teaching and studying of the classics is anything more than
+pretentious elitism, anyone choosing to seriously pursue this tradition
+should not be bothered. The ancients themselves were oftentimes equipped to
+meet arrogant ignorance with their own.
+
+Using technology to teach something as academic or obsolete as Latin might
+seem like a contradiction. One of my host teachers noticed that I was using
+ChatGPT to help me with my Latin homework. His attitude towards me chilled
+somewhat, and the next day he made a pointed comment about how filthy
+cheating is. (I was having it generate definitions of words I did not know
+and asking it questions about my translation on an ungraded assignment---not
+a violation of academic integrity.) I chose not to respond emotionally, let
+alone verbally. What might this kind of reaction teach us about Latin and
+AI?
+
+The assumption that a student using AI must be cheating appears to be rooted
+in mistrust of this emerging technology \autocite{Lim2023}. A famous Greek
+mathematician once told his pupil, a king, that there is no royal road to
+geometry. If I witnessed one of my students using AI in the classroom, I
+would be no less skeptical---but I would ask questions before I accused.
+
+%% ============================================================
+\section*{Artificial Intelligence}
+%% ============================================================
+
+My scholastic journey in the post-reality era would not be what it is---or
+is not---without AI. \textcite{Khan2023} expressed the following in a 2023
+TED Talk:
+\begin{quote}
+We're at the cusp of using AI for probably the biggest positive
+transformation that education has ever seen [\ldots] The way we're going to
+do that is by giving every student on the planet an artificially intelligent
+but amazing personal tutor, and we're going to give every teacher on the
+planet an amazing, artificially intelligent teaching assistant.
+\end{quote}
+This aspiration echoes \textcite{Bloom1984}'s famous ``two-sigma problem,''
+which demonstrated that one-on-one human tutoring produces learning gains
+two standard deviations above conventional classroom instruction---gains
+that no scalable intervention had yet achieved. AI-powered tutoring is now
+the most promising candidate for closing that gap \autocite{Mollick2023}.
+
+\textcite{Colace2025} writes in ``Teaching Latin, inclusion, and Artificial
+Intelligence: What do Teachers Think?'':
+\begin{quote}
+We live in an era where the digital environment is no longer merely an
+external dimension of reality but increasingly becomes an integral and
+structuring component, significantly impacting our personal, professional,
+and social lives\ldots\ the use of adaptive learning systems, which open up
+possibilities for constructing personalized pathways that respond to
+learners' specific difficulties; the integration of gamification to
+strengthen motivation through playful and immersive environments; the
+reflective use of assisted translation to support linguistic and semantic
+analysis of texts without replacing the student's hermeneutic activity; and
+the adoption of specific digital tools that help reinforce reading and
+comprehension practices, fostering interdisciplinarity and inclusivity.
+\end{quote}
+
+Computer-Assisted Language Learning (CALL) has a decades-long research
+tradition documenting the effectiveness of digital tools in language
+instruction \autocite{Warschauer1998, Chapelle2001}. \textit{Latin Explorer}
+situates itself within this tradition while deliberately scoping its
+ambitions to the tools most useful in a living-Latin context.
+
+\textit{Latin Explorer} will focus exclusively on digital tools. I would
+not have been able to build the site without the use of artificial
+intelligence; however, my choice not to integrate AI into the site itself
+was deliberate. Part of my journey as a Latin student included---and
+continues to include---the use of AI. From generating definitions of
+unfamiliar words to debating translation choices, AI has proved useful.
+This is especially true when it comes to holding conversations in Latin,
+since, as previously noted, opportunities to actually use the language are
+vanishingly rare.
+
+There is no room for AI in my Latin classroom---there must be limits and
+boundaries. It would not have been possible for me to build such a site
+without agentic coding, but this is where I draw my line. This position
+aligns with calls in the literature for what \textcite{Colace2025} term the
+``reflective use of assisted translation'': AI as scaffold, not substitute.
+
+%% ============================================================
+\section*{Building the Applets}
+%% ============================================================
+
+I had very little coding experience before creating this project. I had
+heard of things like GitHub and agentic coding before, but never knew what
+they were. My advisor and teacher Todd Edwards was enormously helpful, and I
+greatly appreciate his patience, understanding, and guidance. The two
+programs I used were VS Code and GitHub. Just as students might feel
+intimidated by solving a math problem, I was oftentimes dissuaded from
+fixing errors in my code. When GitHub one day refused to update and VS Code
+was no help at all, I researched some commands to run in my terminal, and it
+finally worked. I am not a computer person, so I rediscovered that special
+feeling of overcoming an insecurity. I hope that I will remember this when I
+have a student struggling with Latin or getting nervous.
+
+%% ------------------------------------------------------------
+\subsection*{Virgil's \textit{Georgics}}
+%% ------------------------------------------------------------
+
+The reason I chose to learn Latin was to be able to read Virgil in the
+original. It seemed fitting to choose Virgil as the author I would feature
+in \textit{Latin Explorer}. Translating an ancient Roman farming almanac is
+just one of the joys I will be able to share with my future students.
+
+The \textit{Georgics} applet allows students to submit questions that the
+teacher can review and incorporate into a lesson. Student responses are
+submitted online; they are able to ask specific questions about grammar,
+vocabulary, and the choices they face as translators. The teacher can not
+only export each student's translation for grading, but see at a glance
+where in the text students are struggling. Reading ancient texts with
+attention to language and meaning is at the heart of what scholars call
+``deep reading'' \autocite{Wolf2018}, and this applet is designed to
+support rather than shortcut that process.
+
+%% ------------------------------------------------------------
+\subsection*{A Living Language: Graffiti and Etymology}
+%% ------------------------------------------------------------
+
+The goal of this applet is to connect students' knowledge of English to
+Latin. Latin's influence on English was primarily lexical: at least 50\% of
+English vocabulary is derived from Latin \autocite{Culpeper2005}. This is
+oftentimes one of the most effective ways to engage students' interest in
+the subject. With this applet, students are encouraged to search for
+derivatives in whatever languages they speak, connecting the unit topic to
+their own linguistic experience---an approach consistent with
+heritage-language pedagogy \autocite{Polinsky2018}.
+
+The graffiti applet encourages students to communicate in an interactive
+way. The ability to write Latin is often not taught in the classroom, yet
+writing reinforces the morphological and syntactic patterns students learn
+through rote memorization in a much more meaningful way
+\autocite{Sharwood1993}. Topics such as colors, feelings, and weather allow
+students to exercise vocabulary while tracking their own progress since the
+start of the year. Prompts related to a unit topic are provided to facilitate
+mastery of sentence frames and vocabulary.
+
+%% ============================================================
+\section*{What I Learned at Miami}
+%% ============================================================
+
+\textit{Latin Explorer} was never intended to be used in a classroom. Dr.\
+Edwards suggested that developing applets for helping students to learn
+Latin would not only demonstrate my growth to my defense committee, but
+would also be a way to share what I had learned about AI and basic coding
+with other foreign language teachers. He also suggested that learning
+agentic coding might serve me well outside of Miami and beyond teaching.
+Using AI to help create this site and learn my content area has revealed its
+seemingly infinite potential. At the very least, I am now better equipped to
+understand my students' choice to use AI than I would have been otherwise.
+
+There are several talking points used to pitch a subject most consider
+obsolete, most of which are as flawed as they are dated. The most persuasive
+line of reasoning came to me one day when I learned that a group of students
+were having lunch in a teacher's classroom. ``They're learning Greek.''
+``I thought you said Walnut Hills cut Greek?'' ``I did---they're doing it for
+fun.''
+
+The heart and mind are sprawling networks---a throne apiece. From the
+humblest nerve to the very seat of our native royalty, pools, corridors,
+courts, and halls where humanity---what it means to be alive---reside.
+Learning is about helping our students make connections. It is my hope that
+Latin, a subject very few will ever consider central to their lives, might
+allow our students to unlock themselves, and come to a knowledge of the most
+high---to make the ultimate connection between themselves and the most high.
+What they choose to do from there can only ever be a choice they must make
+for themselves. What we are teaching them is how to make as informed a
+decision as they can. Latin is one path among many, and it is our job to
+prepare students for their journey.
+
+%% ============================================================
+\printbibliography
+%% ============================================================
+
+\end{document}
